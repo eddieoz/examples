@@ -1,0 +1,5 @@
+tensorflow
+tensorflow-text
+tf-models-official
+matplotlib
+numpy
