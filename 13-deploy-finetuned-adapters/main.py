@@ -62,7 +62,6 @@ def tokenize(prompt, cutoff_len, add_eos_token=True):
 
 def generate(params: Item):
     print("Placing prompt in template")
-    template =  "### Instruction:\n{instruction}\n\n### Response:\n"
     
     # read in contents of template.json
     with open("template.json", "r") as f:
