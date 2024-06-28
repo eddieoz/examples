@@ -174,7 +174,7 @@ def start_bot(room_url: str, token: str = None):
     check_vllm_model_status()
     process = Process(target=target, daemon=True)
     process.start()
-    process.join()  # Wait for the process to complete
+    process.join(timeout=300)  # Wait for the process to complete with a timeout of 5 minutes (300 seconds)
     return {"message": "session finished"}
 
 def create_room():
